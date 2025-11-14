@@ -9,6 +9,7 @@ stages:
       - job: Buildpipeline
         steps:
         - task: TerraformTask@5
+          displayName: terraform init
           inputs:
             provider: 'azurerm'
             command: 'init'
@@ -18,6 +19,7 @@ stages:
             backendAzureRmContainerName: 'containergaurav'
             backendAzureRmKey: 'Terraformvar'
         - task: TerraformTask@5
+          displayName: terraform plan
           inputs:
             provider: 'azurerm'
             command: 'plan'
