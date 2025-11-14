@@ -13,7 +13,7 @@ stages:
           inputs:
             provider: 'azurerm'
             command: 'init'
-            workingDirectory: '$(System.DefaultWorkingDirectory)/Module'
+            workingDirectory: '$(System.DefaultWorkingDirectory)/Module/'
             backendServiceArm: 'ServiceV3'
             backendAzureRmStorageAccountName: 'storageaccountnewgauravs'
             backendAzureRmContainerName: 'containergaurav'
