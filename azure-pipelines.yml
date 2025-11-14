@@ -19,8 +19,8 @@ stages:
             backendAzureRmContainerName: 'containergaurav'
             backendAzureRmKey: 'Terraformvar'
         - task: TerraformTask@5
-          displayName: terraform plan
           inputs:
             provider: 'azurerm'
             command: 'plan'
+            workingDirectory: '$(System.DefaultWorkingDirectory)/Module'
             environmentServiceNameAzureRM: 'ServiceV3'
