@@ -5,8 +5,8 @@ newRGG3 = {
   }
 }
 newSTRGG3 = {
-  missmassdates = {
-    storage_name = "randomstor123"
+  missmassdates1 = {
+    storage_name = "randomstor1234"
     name         = "gauravssrisrg3"
     location     = "centralindia"
   }
