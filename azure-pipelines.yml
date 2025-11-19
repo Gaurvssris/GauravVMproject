@@ -24,3 +24,9 @@ stages:
             command: 'plan'
             workingDirectory: '$(System.DefaultWorkingDirectory)/Module'
             environmentServiceNameAzureRM: 'ServiceV3'
+        - task: TerraformTask@5
+          inputs:
+            provider: 'azurerm'
+            command: 'apply'
+            environmentServiceNameAzureRM: 'ServiceV3'
+            environmentAzureRmOverrideSubscriptionID: '6e65d60a-bc12-4f70-8dcd-6cdb4da48e3e'
