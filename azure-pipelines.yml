@@ -24,4 +24,9 @@ stages:
             command: 'plan'
             workingDirectory: '$(System.DefaultWorkingDirectory)/Module'
             environmentServiceNameAzureRM: 'ServiceV3'
- 
+        - task: TerraformTask@5
+          inputs:
+            provider: 'azurerm'
+            command: 'apply'
+            workingDirectory: '$(System.DefaultWorkingDirectory)/Module'
+            environmentServiceNameAzureRM: 'ServiceV3'
